@@ -1,0 +1,16 @@
+{
+  "name": "sflapp",
+  "version": "1.0.0",
+  "description": "Server SFL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mariela",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemailer": "^5.1.1"
+  }
+}
