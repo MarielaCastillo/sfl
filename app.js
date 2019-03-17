@@ -25,7 +25,9 @@ app.get('/productos', function (req, res) {
 })
 app.get('/header', function (req, res) {
   res.render('header.ejs')
-
+})
+app.get('/nosotros', function (req, res) {
+  res.render('nosotros.ejs')
 })
 
 app.use(bodyParser.urlencoded({ extended: false }));
