@@ -14,7 +14,7 @@ app.get('/hola', function (req, res) {
   res.sendFile(path.join(__dirname + 'index.html'));
 })
 
-app.get('/ejstest', function (req, res) {
+app.get('/home', function (req, res) {
   res.render('prueba.ejs')
 })
 app.get('/footer', function (req, res) {
