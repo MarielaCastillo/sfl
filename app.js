@@ -5,6 +5,7 @@ app.use(express.static("public"))
 app.set('view engine', 'ejs')
 const nodemailer = require("nodemailer");
 const bodyParser = require('body-parser');
+const port = process.env.PORT || 80
 
 app.get('/', function (req, res) {
   res.send('Hello World ')
@@ -85,4 +86,4 @@ var mailOptions = {
     });
   }
 
-app.listen(3000)
+app.listen(port)
