@@ -1,0 +1,46 @@
+<%-include(header)%>
+  <%-include(cssFile)%>
+</head>
+
+<body id="page-top">
+  <%-include(navbar)%>
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container" id="inicio">
+      <div class="intro-text">
+        <div class="intro-heading text-uppercase">PROYECTOS</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="project-container">
+  <%for(x=0;x<4;x++){%>
+    <%-include(card)%>
+  <%}%>
+  </div>
+
+  <div class="papa">
+    <div class="izquierda">
+      <span class="izquierda-r">HOLA</span>
+      <span class="izquierda-r">SOY</span>
+      <span class="izquierda-r">TITULO</span>
+    </div>
+    <div class="derecha">
+      <p>      
+        Bacon ipsum dolor amet meatball ribeye drumstick pork belly ball tip tail pastrami short loin pork loin. Landjaeger shoulder prosciutto chicken, cow ham pork belly
+      </p>
+      <div style="display:flex;justify-content:flex-start">
+        <button class="btn btn-success especial" >
+        DONAR
+      </button>
+    </div>
+    </div>
+  </div>
+
+  <%-include(scriptFile)%>
+  <%-include(footer)%>
+
+
+</body>
+
+</html>

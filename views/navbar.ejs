@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav2">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">LOGO</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" <% if (page == 'nosotros') {%>style="color:#ff9933"<%} %>href="/nosotros">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" <% if (page == 'proyectos') {%>style="color:#ff9933"<%} %> href="/proyectos">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger " <% if (page == 'productos') {%>style="color:#ff9933"<%} %>href="/productos">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" <% if (page == 'donar') {%>style="color:#ff9933"<%} %>href="/donar">Donar</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -40,6 +40,28 @@ app.post('/send', (req, res) => {
   res.send('Hello World');
 });
 
+app.get('/proyectos', function (req, res) {
+  const principal="./projects/projects.ejs";
+  //relativas a ubicacion de principal
+  const header="../oscarheader.ejs";
+  const navbar="../navbar.ejs";
+  const footer="../oscarfooter.ejs"
+  const scriptFile="./projectScripts.ejs";
+  const cssFile="./projectsStyles.ejs"
+  const card="./project.ejs"
+  res.render(principal,{
+      header,
+      navbar,
+      footer,
+      scriptFile,
+      cssFile,
+      card,
+      page:"proyectos"
+  })
+  // res.render('projects.ejs')
+
+})
+
 function mailfun(body) {
   var nodemailer = require('nodemailer');
 
