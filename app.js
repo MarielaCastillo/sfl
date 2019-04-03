@@ -44,7 +44,7 @@ app.get('/proyectos', function (req, res) {
   const principal="./projects/projects.ejs";
   //relativas a ubicacion de principal
   const header="../oscarheader.ejs";
-  const navbar="../navbar.ejs";
+  const navbar="../oscarnavbar.ejs";
   const footer="../oscarfooter.ejs"
   const scriptFile="./projectScripts.ejs";
   const cssFile="./projectsStyles.ejs"
