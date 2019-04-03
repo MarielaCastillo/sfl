@@ -16,7 +16,7 @@ app.get('/hola', function (req, res) {
 })
 
 app.get('/home', function (req, res) {
-  res.render('prueba.ejs')
+  res.render('home.ejs')
 })
 app.get('/footer', function (req, res) {
   res.render('footer.ejs')
