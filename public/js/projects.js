@@ -28,3 +28,9 @@ function activame(){
     document.querySelector('.opciones').classList.toggle('collapsed');
 
 }
+
+function cambioPagina(elemento){
+    console.log(elemento)
+    console.log(elemento.getAttribute("data-destino"))
+    window.location.href=elemento.getAttribute("data-destino")
+}

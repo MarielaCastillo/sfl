@@ -61,7 +61,28 @@ app.get('/proyectos', function (req, res) {
   // res.render('projects.ejs')
 
 })
+app.get('/proyectos/:id', function (req, res) {
+  console.log(`soy el proyecto: ${req.params.id}`)
+  const principal="./projectSpecific/project.ejs";
+  //relativas a ubicacion de principal
+  const header="../oscarheader.ejs";
+  const navbar="../oscarnavbar.ejs";
+  const footer="../oscarfooter.ejs"
+  const scriptFile="./projectScripts.ejs";
+  const cssFile="./projectStyles.ejs"
+  const card="./project.ejs"
+  res.render(principal,{
+      header,
+      navbar,
+      footer,
+      scriptFile,
+      cssFile,
+      card,
+      page:"proyectos"
+  })
+  // res.render('projects.ejs')
 
+})
 function mailfun(body) {
   var nodemailer = require('nodemailer');
 
