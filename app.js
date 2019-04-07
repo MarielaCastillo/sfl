@@ -6,6 +6,8 @@ app.set('view engine', 'ejs')
 const nodemailer = require("nodemailer");
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 80
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
   res.send('Hello World ')
@@ -18,33 +20,20 @@ app.get('/hola', function (req, res) {
 app.get('/home', function (req, res) {
   res.render('home.ejs')
 })
-app.get('/footer', function (req, res) {
-  res.render('footer.ejs')
+app.get('/nosotros', function (req, res) {
+  const navbar="finalnavbar.ejs";
+  res.render('nosotros.ejs',{navbar})
 })
 app.get('/productos', function (req, res) {
-  res.render('productos.ejs')
+  const navbar="finalnavbar.ejs";
+  res.render('productos.ejs',{navbar})
 })
-app.get('/header', function (req, res) {
-  res.render('header.ejs')
-})
-app.get('/nosotros', function (req, res) {
-  res.render('nosotros.ejs')
-})
-
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
-app.post('/send', (req, res) => {
-  console.log(req.body.Nombre);
-  mailfun(req.body);
-  res.send('Hello World');
-});
 
 app.get('/proyectos', function (req, res) {
   const principal="./projects/projects.ejs";
   //relativas a ubicacion de principal
   const header="../oscarheader.ejs";
-  const navbar="../oscarnavbar.ejs";
+  const navbar="../finalnavbar.ejs";
   const footer="../oscarfooter.ejs"
   const scriptFile="./projectScripts.ejs";
   const cssFile="./projectsStyles.ejs"
@@ -66,7 +55,7 @@ app.get('/proyectos/:id', function (req, res) {
   const principal="./projectSpecific/project.ejs";
   //relativas a ubicacion de principal
   const header="../oscarheader.ejs";
-  const navbar="../oscarnavbar.ejs";
+  const navbar="../finalnavbar.ejs";
   const footer="../oscarfooter.ejs"
   const scriptFile="./projectScripts.ejs";
   const cssFile="./projectStyles.ejs"
@@ -83,6 +72,17 @@ app.get('/proyectos/:id', function (req, res) {
   // res.render('projects.ejs')
 
 })
+
+
+
+
+app.post('/send', (req, res) => {
+  console.log(req.body.Nombre);
+  mailfun(req.body);
+  res.send('Hello World');
+});
+
+
 function mailfun(body) {
   var nodemailer = require('nodemailer');
 

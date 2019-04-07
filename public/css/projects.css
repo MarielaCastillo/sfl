@@ -885,12 +885,12 @@
 .myNavbar{
   display:flex;
   /* flex-wrap: wrap; */
-  padding:2rem 4vw;
+  padding:1rem 4vw;
   background-color: #38b1c2;
 }
 .myNavbar >a{
   color:white;
-  font-size:1.5vw
+  font-size:1.3vw
 }
 .myNavbar >a:hover{
   color:#f39d53;
