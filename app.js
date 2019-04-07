@@ -6,6 +6,12 @@ app.set('view engine', 'ejs')
 const nodemailer = require("nodemailer");
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 80
+
+const {sendEmail} =require("./helpers/Email/sendEmail")
+const {htmlContent} =require("./helpers/Email/templateMagico")
+const {htmlContent2} =require("./helpers/Email/clienteMagico")
+const {resetHtmlContent} =require("./helpers/Email/resetTemplate")
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -129,4 +135,64 @@ var mailOptions = {
     });
   }
 
+
+  //=============================envio de correo
+  app.post("/sendEmail",(req,res)=>{
+    console.log("sendEmail")
+    console.log(req.body)
+   
+    const vendedorEmail="oscaralonso11@hotmail.com"
+    const clienteEmail="oscar.rosete@cetys.mx"//TODO: CAMBIAR A req.body.email cuando este validado el formulario
+    const smtpClient={   
+        host: "smtp.zoho.com",
+        port: 465,
+        auth: {
+            user:"admin@oscarrosete.com",
+            pass:"LiaAshanti1!"
+        }
+    }
+
+    //=============correo al vendedor
+    console.log(req.body)
+    const emailContent={
+        name:req.body.Nombre,
+        email:req.body.Correo,
+        phone:req.body.phone,
+        topic:"Contacto cliente",
+        body:req.body.Mensaje,
+        email2:req.body.email,
+    }
+    const content=htmlContent(emailContent)
+    console.log(content)
+    let emailInfo={
+        to:vendedorEmail,
+        subject:"correo importante",
+        htmlContent:content,
+        smtpClient
+    }
+    sendEmail(emailInfo);
+
+    //======correo al cliente
+    const content2=htmlContent2(emailContent)
+    console.log(content2)
+    emailInfo={
+        to:clienteEmail,
+        subject:"correo importante",
+        htmlContent:content2,
+         // attaching http://localhost:5000/images/LogoColor.png
+         attachments: [{
+            filename: 'LogoColor.png',
+            path:"./public/img/LogoColor.png",
+            cid: 'logo', //same cid value as in the html img src
+        }],   
+        smtpClient
+    }
+    sendEmail(emailInfo);
+    console.log(emailInfo.attachments[0].path)
+
+   
+    var tryFetch = {myString: 'I am working fetch'};
+    res.status(200).json(tryFetch);
+});
+  
 app.listen(port)
