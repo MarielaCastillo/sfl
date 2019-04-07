@@ -172,6 +172,7 @@ img::-moz-selection {
 }
 
 header.masthead {
+  position: relative;
   text-align: center;
   color: white;
   background-image: url("../img/imagen1.jpg");
@@ -663,8 +664,7 @@ section#contact :-ms-input-placeholder {
 footer {
   padding: 10px 0;
   background-color: #39C9D9;
-  background: rgb(0,212,255);
-  background: linear-gradient(90deg, rgba(0,212,255,1) 15%, rgba(137,235,255,1) 80%, rgba(214,248,255,1) 100%);
+  
 }
 
 footer span.copyright {
@@ -788,3 +788,46 @@ textarea::placeholder {
 .btn:hover{
   color: #ff9933;
 }
+
+  /* glide */
+  .glide__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 2;
+    color: white;
+    text-transform: uppercase;
+    padding: 9px 12px;
+    background-color: transparent;
+    /* border: 2px solid rgba(255, 255, 255, 0.5); 
+     border-radius: 4px; 
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1); */
+    /* text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); */
+    border:none;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 150ms ease, border 300ms ease-in-out;
+    transform: translateY(-50%);
+    line-height: 1; }
+    .glide__arrow:focus {
+      outline: none; }
+    .glide__arrow:hover {
+      border-color: white; }
+    .glide__arrow--left {
+      left: 2em; }
+    .glide__arrow--down {
+      left: 50% }
+    .glide__arrow--disabled {
+      opacity: 0.33; }
+
+      .glide__arrow :hover{
+          opacity:0.5
+      }
+
+    .down-arrow {
+        -webkit-transform: rotate(90deg); /* Safari and Chrome */
+        -moz-transform: rotate(90deg);   /* Firefox */
+        -ms-transform: rotate(90deg);   /* IE 9 */
+        -o-transform: rotate(90deg);   /* Opera */
+        transform: rotate(90deg);
+    } 
