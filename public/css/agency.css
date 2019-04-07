@@ -820,10 +820,22 @@ textarea::placeholder {
     .glide__arrow--disabled {
       opacity: 0.33; }
 
-      .glide__arrow :hover{
+      .glide__arrow,.glide__arrow2 :hover{
           opacity:0.5
       }
-
+      
+    .glide__arrow2 {
+      position: relative;
+      display: block;   
+      left: 50%;
+      transform: translate(-50%,0%);
+      background-color: transparent;
+      border:none;
+      opacity: 1;
+      cursor: pointer;
+      transition: opacity 150ms ease, border 300ms ease-in-out;
+      line-height: 1; 
+    }
     .down-arrow {
         -webkit-transform: rotate(90deg); /* Safari and Chrome */
         -moz-transform: rotate(90deg);   /* Firefox */
