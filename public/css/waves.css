@@ -1,0 +1,24 @@
+body{
+    height: 120%;
+}
+.d1{
+    margin-top:80px;
+}
+.d2{
+    margin-top: 10px;
+    z-index: 3;
+}
+.d3{
+    margin-top: 0px;
+    margin-left:40%;
+    z-index: 3;
+}
+.d4{
+    margin-top: 0px;
+    margin-left:15%;
+    z-index: 2;
+}
+.d5{
+    margin-top: 500px;
+    z-index: 1;
+}

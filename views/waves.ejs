@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link href="css/waves.css" rel="stylesheet"/>
+    </head>
+    <body>
+ 
+  
+        <div class="rellax d2" data-rellax-speed="-2">
+            <img src="parallaximg/seagull.png"></img>
+        </div>
+        <div class="rellax d3" data-rellax-speed="2">
+                <img src="parallaximg/seagull.png"></img>
+            </div>
+        <div class="rellax d4" data-rellax-speed="5">
+            <img src="parallaximg/seagull.png"></img>
+        </div>
+        <div class="rellax d5" data-rellax-speed="6">
+            <img src="parallaximg/beach-waves-png-2.png"></img>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.8.0/rellax.min.js"></script>
+        <script>
+            var rellax = new Rellax('.rellax', {
+            callback: function(position) {
+            }
+        });
+        </script>
+    </body>
