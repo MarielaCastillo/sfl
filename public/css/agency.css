@@ -773,7 +773,6 @@ hr {
 input::placeholder {
   color: black;
   font-size: 1.2em;
-  font-style: italic;
 }
 textarea::placeholder {
   color: black;

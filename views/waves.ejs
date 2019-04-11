@@ -4,7 +4,10 @@
     </head>
     <body>
  
-  
+        <div class="first"><button type="button" onclick="smoothScroll(document.getElementById('second'))">Click Me!</button></div>
+        <div class="second" id="second">Hi</div>
+
+
         <div class="rellax d2" data-rellax-speed="-2">
             <img src="parallaximg/seagull.png"></img>
         </div>
@@ -17,6 +20,9 @@
         <div class="rellax d5" data-rellax-speed="6">
             <img src="parallaximg/beach-waves-png-2.png"></img>
         </div>
+
+        <script src="js/waves.js"></script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.8.0/rellax.min.js"></script>
         <script>
             var rellax = new Rellax('.rellax', {

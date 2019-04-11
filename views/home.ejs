@@ -59,11 +59,12 @@
   <!-- Header -->
   <header class="masthead">
     <div class="container" id="inicio">
-      <div class="intro-text">
+      <div class="intro-text first">
         
         <div class="intro-heading text-uppercase">SAN FELOVE</div>
         <div class="intro-lead-in text-uppercase">Organización</div>
-        <button class="glide__arrow2" data-glide-dir=">"><div class="down-arrow"><a href="#nosotros"><%-include("./projectSpecific/rightarrow.ejs")%></a></div></button>
+        <button type="button" onclick="smoothScroll(document.getElementById('nosotros'))" class="glide__arrow2" data-glide-dir=">"><div class="down-arrow"><%-include("./projectSpecific/rightarrow.ejs")%></div></button>
+
       </div>
     </div>
   </header>
@@ -421,6 +422,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.js"></script>
+  <script src="js/waves.js"></script>
 
 </body>
 
