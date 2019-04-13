@@ -46,7 +46,7 @@ section {
 }
 
 section h2.section-heading {
-  font-size: 50px;
+  font-size: 3.5em;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -741,6 +741,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .text-muted {
   text-align: center;
+  font-size: 1.2em;
 }
 
 .text-muted2 {

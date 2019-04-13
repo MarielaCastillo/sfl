@@ -39,6 +39,13 @@ app.get('/waves', function (req, res) {
   res.render('waves.ejs')
 })
 
+app.get('/waves2', function (req, res) {
+  res.render('waves2.ejs')
+})
+app.get('/home2', function (req, res) {
+  res.render('home2.ejs')
+})
+
 app.get('/proyectos', function (req, res) {
   const principal="./projects/projects.ejs";
   //relativas a ubicacion de principal

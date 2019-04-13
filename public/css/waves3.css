@@ -1,0 +1,81 @@
+body{
+    height: 120%;
+}
+.fadein{
+    opacity: 0.3;
+}
+
+.fadein2{
+    opacity:-0.5;
+}
+
+.background{
+    position: absolute;
+    opacity: 0.4;
+    margin-top:0px;
+}
+.sun{
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+    margin-top:0px;
+}
+.cloudleft{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.4;
+    margin-top:200px;
+}
+.cloudright{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+    margin-top:230px;
+}
+.watertop{
+    position: absolute;
+    z-index: 3;
+    opacity: 0.5;
+    margin-top:325px;
+}
+.watermed{
+    position: absolute;
+    z-index: 2;
+    margin-top:300px;
+}
+.waterback{
+    position: absolute;
+    z-index: 1;
+    margin-top:300px;
+}
+.sandup{
+    position: absolute;
+    z-index: 3;
+    margin-top:330px;
+}
+.umbrellachair{
+    position: absolute;
+    z-index: 4;
+    margin-top:330px;
+}
+.sanddown{
+    position: absolute;
+    z-index: 6;
+    margin-top:330px;
+}
+.seagull{
+    position: absolute;
+    z-index: 6;
+    opacity: 0.5;
+    width: 20%;
+    height: auto;
+    margin-left:20%;
+    margin-top:330px;
+}
+.gimmesomespace{
+    padding: 400px;
+    text-align: center;
+    background: white;
+    font-size: 30px;
+}
+

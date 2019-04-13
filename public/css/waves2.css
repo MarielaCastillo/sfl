@@ -1,0 +1,51 @@
+body{
+    height: 120%;
+}
+.background{
+    position: absolute;
+    margin-top:-300px;
+}
+.sun{
+    position: absolute;
+    top: 0%;
+    z-index: 0;
+}
+.cloudleft{
+    position: absolute;
+    z-index: 0;
+}
+.cloudright{
+    position: absolute;
+    z-index: 0;
+}
+.watertop{
+    position: absolute;
+    z-index: 2;
+}
+.watermed{
+    position: absolute;
+    z-index: 1;
+}
+.waterback{
+    position: absolute;
+    z-index: 0;
+}
+.sandup{
+    position: absolute;
+    z-index: 2;
+}
+.umbrellachair{
+    position: absolute;
+    z-index: 3;
+}
+.sanddown{
+    position: absolute;
+    z-index: 5;
+}
+.gimmesomespace{
+    padding: 400px;
+    text-align: center;
+    background: white;
+    color: white;
+    font-size: 30px;
+}

@@ -22,52 +22,79 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
+  <link href="css/waves4.css" rel="stylesheet"/>
 
 </head>
 
 <body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">LOGO</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/home">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/nosotros">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/proyectos">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/productos">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#donar">Donar</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container" id="inicio">
-      <div class="intro-text first">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top fadein2" id="mainNav">
+                <div class="container">
+                  <a class="navbar-brand js-scroll-trigger" href="#page-top">LOGO</a>
+                  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/home">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/nosotros">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/proyectos">Proyectos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/productos">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#donar">Donar</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         
-        <div class="intro-heading text-uppercase">SAN FELOVE</div>
-        <div class="intro-lead-in text-uppercase">Organización</div>
-        <button type="button" onclick="smoothScroll(document.getElementById('nosotros'))" class="glide__arrow2" data-glide-dir=">"><div class="down-arrow"><%-include("./projectSpecific/rightarrow.ejs")%></div></button>
+                <div class="rellax background fadein" data-rellax-speed="-12.5">
+                    <img src="parallaximg/10.png"></img>
+                </div>
+                <div class="rellax sun fadeout" data-rellax-speed="-14">
+                        <img src="parallaximg/7.png"></img>
+                    </div>
+                <div class="rellax cloudleft" data-rellax-speed="-4">
+                    <img src="parallaximg/9.png"></img>
+                </div>
+                <div class="rellax cloudright" data-rellax-speed="-5">
+                    <img src="parallaximg/8.png"></img>
+                </div>
+                <div class="rellax watertop fadein3" data-rellax-speed="1.1">
+                    <img src="parallaximg/6.png"></img>
+                </div>
+                <div class="rellax watermed" data-rellax-speed="0.5">
+                        <img src="parallaximg/5.png"></img>
+                    </div>
+                <div class="rellax waterback" data-rellax-speed="-0.5">
+                    <img src="parallaximg/4.png"></img>
+                </div>
+                <div class="rellax sandup" data-rellax-speed="2">
+                    <img src="parallaximg/3.png"></img>
+                </div>
+                <div class="rellax umbrellachair" data-rellax-speed="2">
+                        <img src="parallaximg/2.png"></img>
+                    </div>
+                <div class="rellax sanddown" data-rellax-speed="2.5">
+                    <img src="parallaximg/1.png"></img>
+                </div>
+                <div class="rellax sanddown" data-rellax-speed="1">
+                    <img src="parallaximg/1.png"></img>
+                </div>
+                <div class="rellax sanddown" data-rellax-speed="-1.8">
+                        <img src="parallaximg/1.png"></img>
+                </div>
 
-      </div>
-    </div>
-  </header>
+    <div class="gimmesomespace"></div>
+
+
 
 
 
@@ -409,17 +436,6 @@
     </div>
   </div>
 
-  <script src="js/agency.js"></script>
-  <script src="js/waves2.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.8.0/rellax.min.js"></script>
-  <script>
-      var rellax = new Rellax('.rellax', {
-      callback: function(position) {
-      }
-  });
-  </script>
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -433,7 +449,16 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.js"></script>
-  <script src="js/waves.js"></script>
+  <script src="js/waves2.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.8.0/rellax.min.js"></script>
+  <script>
+      var rellax = new Rellax('.rellax', {
+      callback: function(position) {
+      }
+  });
+  </script>
 
 </body>
 

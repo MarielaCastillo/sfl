@@ -1,0 +1,101 @@
+body{
+    height: 120%;
+}
+.fadein{
+    opacity: 0.3;
+}
+
+.fadein2{
+    opacity:-0.5;
+}
+
+.background{
+    position: absolute;
+    opacity: 0.2;
+    margin-top:0%;
+    width: 100%;
+    height: auto;
+}
+.sun{
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+    margin-top:0%;
+    width: 100%;
+    height: auto;
+}
+.cloudleft{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.4;
+    margin-top:15%;
+    width: 100%;
+    height: auto;
+}
+.cloudright{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+    margin-top:16%;
+    width: 100%;
+    height: auto;
+}
+.watertop{
+    position: absolute;
+    z-index: 3;
+    opacity: 0.5;
+    margin-top:21%;
+    width: 100%;
+    height: auto;
+}
+.watermed{
+    position: absolute;
+    z-index: 2;
+    margin-top:19%;
+    width: 100%;
+    height: auto;
+}
+.waterback{
+    position: absolute;
+    z-index: 1;
+    margin-top:19%;
+    width: 100%;
+    height: auto;
+}
+.sandup{
+    position: absolute;
+    z-index: 3;
+    margin-top:22%;
+    width: 100%;
+    height: auto;
+}
+.umbrellachair{
+    position: absolute;
+    z-index: 4;
+    margin-top:22%;
+    width: 100%;
+    height: auto;
+}
+.sanddown{
+    position: absolute;
+    z-index: 6;
+    margin-top:22%;
+    width: 100%;
+    height: auto;
+}
+.seagull{
+    position: absolute;
+    z-index: 6;
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+    margin-left:20%;
+    margin-top:22%;
+}
+.gimmesomespace{
+    padding: 700px;
+    text-align: center;
+    background: white;
+    font-size: 30px;
+}
+
