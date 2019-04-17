@@ -796,6 +796,7 @@
     margin-right: 1rem;
   }
   .img {
+    width: 85%;
     max-width: 100%;
     height: auto;
     max-height:30vh;
@@ -824,6 +825,7 @@
   color:#e69151;
 }
 .project-description{
+  width: 85%;
   font-size:2vw;
   text-align:justify;
   line-height:100%;
