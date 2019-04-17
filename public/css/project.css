@@ -1009,3 +1009,32 @@
         -o-transform: rotate(180deg);   /* Opera */
         transform: rotate(180deg);
     } 
+
+
+    .imagecontainer {
+      position: relative;
+      right: 0%;
+      text-align: center;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+    }
+    .titleup {
+      position: absolute;
+      font-weight: bold;
+      font-size: 4vw;
+      text-align: center;
+      top: 15vh;
+      transform: translate(-50%);
+      left: 50%;
+      
+    }
+    .titledown {
+      position: absolute;
+      font-size: 2vw;
+      text-align: center;
+      top: 24vh;
+      transform: translate(-50%);
+      left: 50%;
+    }
