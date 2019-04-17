@@ -19,13 +19,11 @@ body{
 .background{
     opacity: 0.2;
     margin-top:0%;
-    width: 100%;
 }
 .sun{
     top: 0%;
     z-index: 1;
     margin-top:0%;
-    width: 100%;
 }
 .cloudleft{
     z-index: 0;
@@ -65,7 +63,6 @@ body{
 .seagull{
     z-index: 6;
     opacity: 0.5;
-    width: 100%;
     margin-left:20%;
     margin-top:22%;
 }
@@ -74,10 +71,4 @@ body{
     text-align: center;
     background: white;
     font-size: 30px;
-}
-
-.nosotros{
-    /* position: absolute;
-    top:120%; */
-    /* height:100vh; */
 }
