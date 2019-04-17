@@ -137,6 +137,7 @@ body{
     background-color:white;
     color:white;
     padding: 3vh 5vw;
+    margin: 15vh 0vw;
   }
   
   .izquierda{
@@ -147,12 +148,14 @@ body{
     flex-wrap: wrap;
     align-content:center;
     padding-left: 4rem;
+    font-family: "Montserrat";
   }
   .izquierda-r{
     line-height:100%;
     margin-bottom:0;
     width:100%;
     color:#3cabb9;
+    font-family: "Montserrat";
   }
   
   .derecha{
@@ -163,6 +166,7 @@ body{
     font-size:1.5vw;
     text-align: justify;
     color:black;
+    font-family: "Montserrat";
   }
   .especialbtn{
     border-radius: 2vw;
@@ -170,7 +174,8 @@ body{
     color:#f48c40;
     padding:0.5rem 3rem;
     font-size:2vw;
-    background-color:white
+    background-color:white;
+    font-family: "Montserrat";
   }
   .especialbtn:hover{
     border: 5px solid #f48c40;

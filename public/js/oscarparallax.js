@@ -51,7 +51,7 @@ $(window).scroll(function(){
 
 $(window).scroll(function(){
     var scrollVar = $(window).scrollTop();
-    if (scrollVar > finHeight-280) {
+    if (scrollVar > finHeight-450) {
     $('.dissappear').css("display", "none");
     }
     else
