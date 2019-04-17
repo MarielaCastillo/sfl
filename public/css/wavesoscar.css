@@ -72,3 +72,111 @@ body{
     background: white;
     font-size: 30px;
 }
+.cosa{
+    display:flex;
+    flex-flow: row nowrap;
+    padding: 0;
+    align-content: center
+}
+.cuadro{
+    width:33.33vw;
+    background-color: #38b1c2;
+}
+.cuadro2{
+    width:33.33vw;
+    background-color: #72ccd5;
+}
+.cuadro,.cuadro2{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    height: 15vh;
+}
+.cuadro>a,.cuadro2>a{
+    width: 100%;
+    color:white;
+    font-size:1.75rem;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+.especial{
+    color:#36b2c1;
+    background-color:white;
+    border:white;
+    
+    border-radius: 2vw;
+    /* border: 5px solid #f48c40; */
+    /* color:#f48c40; */
+    padding:0.5rem 3rem;
+    font-size:2vw;
+  
+  }
+  .especial:hover{
+    background-color:#37b1c2;
+    border:#37b1c2;
+    color:white
+  }
+
+  /* photocontainer */
+  .photoContainer{
+    display:flex;
+    flex-flow: row nowrap;
+  }
+  .photo{
+      margin-right: 7px;
+  }
+  .lastPhoto{
+
+  }
+
+  .papa{
+    display:flex;
+    flex-direction:row;
+    height:30vh;
+    background-color:white;
+    color:white;
+    padding: 3vh 5vw;
+  }
+  
+  .izquierda{
+    width:30vw;
+    font-size:4vw;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content:center;
+    padding-left: 4rem;
+  }
+  .izquierda-r{
+    line-height:100%;
+    margin-bottom:0;
+    width:100%;
+    color:#3cabb9;
+  }
+  
+  .derecha{
+    width:70vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    font-size:1.5vw;
+    text-align: justify;
+    color:black;
+  }
+  .especialbtn{
+    border-radius: 2vw;
+    border: 5px solid #f48c40;
+    color:#f48c40;
+    padding:0.5rem 3rem;
+    font-size:2vw;
+    background-color:white
+  }
+  .especialbtn:hover{
+    border: 5px solid #f48c40;
+    background-color: #f48c40;
+    color:white;
+  }
+  .intro-lead-in,.intro-heading.text-uppercase{
+      text-align: right;
+  }
