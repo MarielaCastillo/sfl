@@ -1,0 +1,83 @@
+body{
+    height: 120%;
+}
+
+.fadein{
+    opacity: 0.3;
+}
+
+.parImg{
+    position: absolute;
+    width:100vw;
+    height: auto;
+}
+
+.fadein2{
+    opacity:-0.5;
+}
+
+.background{
+    opacity: 0.2;
+    margin-top:0%;
+    width: 100%;
+}
+.sun{
+    top: 0%;
+    z-index: 1;
+    margin-top:0%;
+    width: 100%;
+}
+.cloudleft{
+    z-index: 0;
+    opacity: 0.4;
+    margin-top:15%;
+}
+.cloudright{
+    z-index: 0;
+    opacity: 0.5;
+    margin-top:16%;
+}
+.watertop{
+    z-index: 3;
+    opacity: 0.5;
+    margin-top:21%;
+}
+.watermed{
+    z-index: 2;
+    margin-top:19%;
+}
+.waterback{
+    z-index: 1;
+    margin-top:19%;
+}
+.sandup{
+    z-index: 3;
+    margin-top:22%;
+}
+.umbrellachair{
+    z-index: 4;
+    margin-top:22%;
+}
+.sanddown{
+    z-index: 6;
+    margin-top:22%;
+}
+.seagull{
+    z-index: 6;
+    opacity: 0.5;
+    width: 100%;
+    margin-left:20%;
+    margin-top:22%;
+}
+.gimmesomespace{
+    height: 800px;
+    text-align: center;
+    background: white;
+    font-size: 30px;
+}
+
+.nosotros{
+    /* position: absolute;
+    top:120%; */
+    /* height:100vh; */
+}

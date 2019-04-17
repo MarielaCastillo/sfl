@@ -22,7 +22,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
-  <link href="css/waves4.css" rel="stylesheet"/>
+  <link href="css/wavesoscar.css" rel="stylesheet"/>
 
 </head>
 
@@ -54,63 +54,39 @@
                   </div>
                 </div>
               </nav>
-              <div style="margin-bottom:2px;">
-                <div class="rellax background fadein" data-rellax-speed="-12.5">
-                    <img src="parallaximg/10.png" class="parImg"></img>
-                </div>
-                <div class="rellax sun fadeout dissappear" data-rellax-speed="-14">
-                        <img src="parallaximg/7.png" class="parImg"></img>
+              <%# 1440x899 %>
+              <%# 1.60 mayor vw a vh %>
+              <div id="main" >
+                <%# <img src="parallaximg/10.png" ></img> %>
+                <img src="parallaximg/10.png" class="parImg rellax background fadein"  data-rellax-speed="-12.5"></img>
+                <img src="parallaximg/7.png" class="parImg rellax sun fadeout dissappear" data-rellax-speed="-14"></img>
+                <img src="parallaximg/9.png" class="parImg rellax cloudleft" data-rellax-speed="-4"></img>
+                <img src="parallaximg/8.png" class="parImg rellax cloudright" data-rellax-speed="-5"></img>
+                <img src="parallaximg/6.png" class="parImg rellax watertop fadein3" data-rellax-speed="1.1"></img>
+                <img src="parallaximg/5.png" class="parImg rellax watermed" data-rellax-speed="0.5"></img>
+                <img src="parallaximg/4.png" class="parImg rellax waterback" data-rellax-speed="-0.5"></img>
+                <img src="parallaximg/3.png" class="parImg rellax sandup" data-rellax-speed="2"></img>
+                <img src="parallaximg/2.png" class="parImg rellax umbrellachair" data-rellax-speed="2"></img>
+                <img src="parallaximg/1.png" class="parImg rellax sanddown" data-rellax-speed="2.5"></img>
+                <img src="parallaximg/1.png" class="parImg rellax sanddown"  data-rellax-speed="1"></img>
+            </div>
+            <div class="gimmesomespace"></div>
+
+            <!-- Nosotros -->
+            <section id="nosotros" class="relax nosotros" >
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="text-align:left">¿Qué es Sanfelove?</h2>
                     </div>
-                <div class="rellax cloudleft" data-rellax-speed="-4">
-                    <img src="parallaximg/9.png" class="parImg"></img>
                 </div>
-                <div class="rellax cloudright" data-rellax-speed="-5">
-                    <img src="parallaximg/8.png" class="parImg"></img>
+                <div class="row text-center">
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipiscing elit nam blandit quam cras, faucibus interdum dictumst erat rhoncus sapien morbi ornare sem fames vestibulum curae, primis himenaeos odio libero ad mauris facilisi pretium vel laoreet. Orci accumsan bibendum justo consequat aenean est torquent dictumst, vulputate cursus aptent pellentesque in posuere sodales, nibh faucibus velit etiam eleifend pulvinar cum.</p>
                 </div>
-                <div class="rellax watertop fadein3" data-rellax-speed="1.1">
-                    <img src="parallaximg/6.png" class="parImg"></img>
                 </div>
-                <div class="rellax watermed" data-rellax-speed="0.5">
-                        <img src="parallaximg/5.png" class="parImg"></img>
-                    </div>
-                <div class="rellax waterback" data-rellax-speed="-0.5">
-                    <img src="parallaximg/4.png" class="parImg"></img>
-                </div>
-                <div class="rellax sandup" data-rellax-speed="2">
-                    <img src="parallaximg/3.png" class="parImg"></img>
-                </div>
-                <div class="rellax umbrellachair" data-rellax-speed="2">
-                        <img src="parallaximg/2.png" class="parImg"></img>
-                    </div>
-                <div class="rellax sanddown" data-rellax-speed="2.5">
-                    <img src="parallaximg/1.png" class="parImg"></img>
-                </div>
-                <div class="rellax sanddown" data-rellax-speed="1">
-                    <img src="parallaximg/1.png" class="parImg"></img>
-                </div>
-              </div>
-    <div class="gimmesomespace"></div>
+            </section>
 
-
-
-
-
-
-  <!-- Nosotros -->
-  <section id="nosotros">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading" style="text-align:left">¿Qué es Sanfelove?</h2>
-        </div>
-      </div>
-      <div class="row text-center">
-          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipiscing elit nam blandit quam cras, faucibus interdum dictumst erat rhoncus sapien morbi ornare sem fames vestibulum curae, primis himenaeos odio libero ad mauris facilisi pretium vel laoreet. Orci accumsan bibendum justo consequat aenean est torquent dictumst, vulputate cursus aptent pellentesque in posuere sodales, nibh faucibus velit etiam eleifend pulvinar cum.</p>
-      </div>
-    </div>
-  </section>
-
-    <!-- Clients -->
+  <!-- Clients -->
     <section class="py-5">
       <div class="container">
         <div class="row">
@@ -432,7 +408,6 @@
       </div>
     </div>
   </div>
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -445,15 +420,14 @@
   <script src="js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/agency.js"></script>
-  <script src="js/waves2.js"></script>
+  <script src="js/oscarparallax.js"></script>
+  <%# <script src="js/oscaragency.js"></script> %>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.8.0/rellax.min.js"></script>
   <script>
       var rellax = new Rellax('.rellax', {
-      callback: function(position) {
-      }
+        // wrapper: document.querySelector('#main') // or '.Layout__main'
   });
   </script>
 
