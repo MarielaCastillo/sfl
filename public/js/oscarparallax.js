@@ -9,7 +9,7 @@ console.log(finImg)
 console.log(margen)
 console.log(finHeight)
 // console.log(document.querySelector('.gimmesomespace').style.height)
-const newHeight=(finHeight).toString()+"px";
+const newHeight=(finHeight-80).toString()+"px";
 console.log(`nueva altura ${newHeight}`)
 document.querySelector('.gimmesomespace').style.height=newHeight
 }
@@ -73,7 +73,8 @@ $(window).scroll(function(){
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > finHeight-20) {
+    if ($("#mainNav").offset().top > finHeight-150) {
+ // if ($("#mainNav").offset().top > 1050) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
