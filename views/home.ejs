@@ -22,157 +22,111 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
+  <link href="css/wavesoscar.css" rel="stylesheet"/>
 
 </head>
 
 <body id="page-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top fadein2" id="mainNav">
+                <div class="container">
+                  <a class="navbar-brand js-scroll-trigger" href="#page-top">LOGO</a>
+                  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/home">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/nosotros">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/proyectos">Proyectos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/productos">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#donar">Donar</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <%# 1440x899 %>
+              <%# 1.60 mayor vw a vh %>
+              <div id="main" >
+                <%# <img src="parallaximg/10.png" ></img> %>
+                <img src="parallaximg/10.png" class="parImg rellax background fadein"  data-rellax-speed="-12.5"></img>
+                <img src="parallaximg/7.png" class="parImg rellax sun fadeout dissappear" data-rellax-speed="-14"></img>
+                <img src="parallaximg/9.png" class="parImg rellax cloudleft" data-rellax-speed="-4"></img>
+                <img src="parallaximg/8.png" class="parImg rellax cloudright" data-rellax-speed="-5"></img>
+                <img src="parallaximg/6.png" class="parImg rellax watertop fadein3" data-rellax-speed="1.1"></img>
+                <img src="parallaximg/5.png" class="parImg rellax watermed" data-rellax-speed="0.5"></img>
+                <img src="parallaximg/4.png" class="parImg rellax waterback" data-rellax-speed="-0.5"></img>
+                <img src="parallaximg/3.png" class="parImg rellax sandup" data-rellax-speed="2"></img>
+                <img src="parallaximg/2.png" class="parImg rellax umbrellachair" data-rellax-speed="2"></img>
+                <img src="parallaximg/1.png" class="parImg rellax sanddown" data-rellax-speed="2.5"></img>
+                <img src="parallaximg/1.png" class="parImg rellax sanddown"  data-rellax-speed="1"></img>
+            </div>
+            <div class="gimmesomespace"></div>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">LOGO</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/home">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/nosotros">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/proyectos">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/productos">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#donar">Donar</a>
-          </li>
-        </ul>
+            <!-- Nosotros -->
+            <section id="nosotros" class="relax nosotros" >
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="text-align:left">¿Qué es Sanfelove?</h2>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipiscing elit nam blandit quam cras, faucibus interdum dictumst erat rhoncus sapien morbi ornare sem fames vestibulum curae, primis himenaeos odio libero ad mauris facilisi pretium vel laoreet. Orci accumsan bibendum justo consequat aenean est torquent dictumst, vulputate cursus aptent pellentesque in posuere sodales, nibh faucibus velit etiam eleifend pulvinar cum.</p>
+                </div>
+                </div>
+            </section>
+
+  <!-- Clients -->
+    <section class="cosa">
+      <div class="cuadro">
+        <a href="#">Proyectos
+        </a>
       </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container" id="inicio">
-      <div class="intro-text first">
-        
-        <div class="intro-heading text-uppercase">SAN FELOVE</div>
-        <div class="intro-lead-in text-uppercase">Organización</div>
-        <button type="button" onclick="smoothScroll(document.getElementById('nosotros'))" class="glide__arrow2" data-glide-dir=">"><div class="down-arrow"><%-include("./projectSpecific/rightarrow.ejs")%></div></button>
-
+      <div  class="cuadro2">
+        <a href="#">
+          Productos
+        </a>
       </div>
-    </div>
-  </header>
-
-
-
-
-  <!-- Nosotros -->
-  <section id="nosotros">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading" style="text-align:left">¿Qué es Sanfelove?</h2>
-        </div>
-      </div>
-      <div class="row text-center">
-          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipiscing elit nam blandit quam cras, faucibus interdum dictumst erat rhoncus sapien morbi ornare sem fames vestibulum curae, primis himenaeos odio libero ad mauris facilisi pretium vel laoreet. Orci accumsan bibendum justo consequat aenean est torquent dictumst, vulputate cursus aptent pellentesque in posuere sodales, nibh faucibus velit etiam eleifend pulvinar cum.</p>
-      </div>
-    </div>
-  </section>
-
-    <!-- Clients -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            <a href="#">
-              <h3 class="section-heading">Proyectos</h3>
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <a href="#">
-                <h3 class="section-heading">Productos</h3>
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <a href="#">
-                <h3 class="section-heading">Contacto</h3>
-            </a>
-          </div>
-        </div>
+      <div  class="cuadro">
+        <a href="#">
+          Contáctanos
+        </a>
       </div>
     </section>
 
+
   <!-- Proyectos Grid -->
   <section class="bg-light" id="proyectos">
-    <div class="container">
+    <div class="container-fluid p-0">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Proyectos</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-3 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-               
-              </div>
-            </div>
+      <div class="photoContainer">
+        <div class="photo">
             <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-
-          </div>
         </div>
-        <div class="col-md-3 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-              
-              </div>
-            </div>
+        <div class="photo">
             <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-
-          </div>
         </div>
-        <div class="col-md-3 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                
-              </div>
-            </div>
+        <div class="photo">
             <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-
-          </div>
         </div>
-        <div class="col-md-3 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-          </div>
+        <div class="lastphoto">
+            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
         </div>
-        
-        
       </div>
-    </div>
   </section>
 
   <!-- Productos -->
@@ -182,24 +136,31 @@
         
         <div class="intro-heading text-uppercase">Productos</div>
         <div class="intro-lead-in">Muchos productos</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">ver más</a>
+      <div style="display:flex;justify-content:flex-end">
+          <a class="btn especial" href="#services">ver más</a>
+        </div>
       </div>
     </div>
   </header>
 
 <!-- Donar en home -->
-  <section id="donar">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Hola</h2>
-          </div>
-        </div>
-        <div class="row text-center">
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipiscing elit nam blandit quam cras, faucibus interdum dictumst erat rhoncus sapien morbi ornare sem fames vestibulum curae, primis himenaeos odio libero ad mauris facilisi pretium vel laoreet. Orci accumsan bibendum justo consequat aenean est torquent dictumst, vulputate cursus aptent pellentesque in posuere sodales, nibh faucibus velit etiam eleifend pulvinar cum.</p>
-        </div>
+<div class="papa">
+    <div class="izquierda">
+      <span class="izquierda-r">HOLA</span>
+      <span class="izquierda-r">SOY</span>
+      <span class="izquierda-r">TITULO</span>
+    </div>
+    <div class="derecha">
+      <p style="margin-bottom:10px">      
+        Bacon ipsum dolor amet meatball ribeye drumstick pork belly ball tip tail pastrami short loin pork loin. Landjaeger shoulder prosciutto chicken, cow ham pork belly
+      </p>
+      <div style="display:flex;justify-content:flex-start">
+        <button class="btn btn-success especialbtn" >
+          DONAR
+        </button>
       </div>
-    </section>
+    </div>
+  </div>
     
     <% include footer %>
 
@@ -408,18 +369,6 @@
       </div>
     </div>
   </div>
-
-  <script src="js/agency.js"></script>
-  <script src="js/waves2.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.8.0/rellax.min.js"></script>
-  <script>
-      var rellax = new Rellax('.rellax', {
-      callback: function(position) {
-      }
-  });
-  </script>
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -432,8 +381,16 @@
   <script src="js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/agency.js"></script>
-  <script src="js/waves.js"></script>
+  <script src="js/oscarparallax.js"></script>
+  <%# <script src="js/oscaragency.js"></script> %>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.8.0/rellax.min.js"></script>
+  <script>
+      var rellax = new Rellax('.rellax', {
+        // wrapper: document.querySelector('#main') // or '.Layout__main'
+  });
+  </script>
 
 </body>
 

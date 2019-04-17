@@ -16,11 +16,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
-  res.send('Hello World ')
+  res.redirect('/home');
+//  res.send('Hello World ')
 })
 
 app.get('/hola', function (req, res) {
-  res.sendFile(path.join(__dirname + 'index.html'));
+  res.redirect('/home');
+//  res.sendFile(path.join(__dirname + 'index.html'));
 })
 
 app.get('/home', function (req, res) {
@@ -45,8 +47,8 @@ app.get('/waves2', function (req, res) {
 app.get('/home2', function (req, res) {
   res.render('home2.ejs')
 })
-app.get('/home3', function (req, res) {
-  res.render('home3.ejs')
+app.get('/home', function (req, res) {
+  res.render('home.ejs')
 })
 
 app.get('/proyectos', function (req, res) {
