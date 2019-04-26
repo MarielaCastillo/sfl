@@ -59,6 +59,17 @@ $(window).scroll(function(){
     $('.dissappear').css("display", "block");
     }
 })
+
+$(window).scroll(function(){
+  var scrollVar = $(window).scrollTop();
+  if (scrollVar > finHeight-820) {
+  $('.dissappearrfx').css("display", "none");
+  }
+  else
+  {
+  $('.dissappearrfx').css("display", "block");
+  }
+})
   
 
 // let absoluteDivHeight = document.getElementByClassName('absoluteDiv')[0].offsetHeight;
