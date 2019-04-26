@@ -808,7 +808,7 @@
   border: 5px solid #f48c40;
   color:#f48c40;
   padding:0.5rem 3rem;
-  font-size:2vw;
+  font-size:1.6vw;
 }
 .especialbtn:hover{
   border: 5px solid #f48c40;
@@ -826,7 +826,7 @@
 }
 .project-description{
   width: 85%;
-  font-size:2vw;
+  font-size:1.6vw;
   text-align:justify;
   line-height:100%;
   margin-bottom:2rem;

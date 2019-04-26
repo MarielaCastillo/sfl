@@ -44,6 +44,9 @@ app.get('/waves', function (req, res) {
 app.get('/waves2', function (req, res) {
   res.render('waves2.ejs')
 })
+app.get('/waves3', function (req, res) {
+  res.render('waves3.ejs')
+})
 app.get('/home2', function (req, res) {
   res.render('home2.ejs')
 })
